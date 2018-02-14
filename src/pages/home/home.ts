@@ -61,8 +61,7 @@ export class HomePage {
       <ion-item *ngFor="let item of character['items']">
         {{item.title}}
         <ion-note item-end>
-          
-          {{fname}}
+          {{item.note}}
         </ion-note>
       </ion-item>
   </ion-list>
