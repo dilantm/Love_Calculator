@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Love Calculator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<h2></h2>
+<ion-content padding="">
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>He's name</ion-label>
+      <ion-input type="text" [(ngModel)]="fname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>She's name</ion-label>
+      <ion-input type="text" [(ngModel)]="lname"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-card text-center>
+    <ion-card-header>
+      {{fname || 'He'}}
+      <ion-icon name="heart" color="danger"></ion-icon>
+      {{lname || 'she'}}
+    </ion-card-header>
+    <ion-card-content class="score">
+      {{score}}%
+    </ion-card-content>
+
+    <a (click)="openModal({charNum: 0})">
+      <button ion-button color="newpink" round *ngIf=" score> 60 ">
+        <ion-icon name="heart" color="light"></ion-icon>
+      </button>
+    </a>
+  </ion-card>
+</ion-content>
