@@ -83,7 +83,7 @@ export class ModalContentPage {
         quote: 'Sneaky little hobbitses!',
         image: 'assets/imgs/myicon.jpg',
         items: [
-          { title: 'He\'\ s name',inputVal:'{{fname}}'},
+          { title: 'He\'\ s name',note: 'Smeagol'},
           { title: 'She\'\ s name'},
           { title: 'Alter Ego', note: 'Smeagol' }
         ]
